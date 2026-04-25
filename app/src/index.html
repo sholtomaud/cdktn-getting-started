@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CDKTN Hello World</title>
+  <meta name="description" content="CDK Terrain hello world — CloudFront + S3 static site deployed with TypeScript IaC." />
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body>
+  <div class="card" id="app">
+    <span class="badge">CDK Terrain · Hello World</span>
+    <h1>Deployed via CDKTN</h1>
+    <p>
+      This page is served from a private <strong>S3 bucket</strong> behind a
+      <strong>CloudFront distribution</strong>, synthesised and deployed
+      from TypeScript using CDK Terrain.
+    </p>
+
+    <div class="card-content">
+      <div id="auth-status" class="status-row">
+        <span class="badge badge-error">Locked</span> Authentication Required
+      </div>
+      
+      <button id="login-btn" class="login-button">
+        Biometric Login
+      </button>
+
+      <p class="caption" id="uptime-counter">Page loaded · uptime: 0s</p>
+
+      <div class="stack" id="stack-items">
+        <div class="stack-item">
+          <span class="icon">☁️</span>
+          <div>
+            <div class="label">Amazon CloudFront</div>
+            <div class="sub">CDN · HTTPS · OAC origin access</div>
+          </div>
+        </div>
+        <div class="stack-item">
+          <span class="icon">🪣</span>
+          <div>
+            <div class="label">Amazon S3</div>
+            <div class="sub">Private bucket · no public access</div>
+          </div>
+        </div>
+        <div class="stack-item">
+          <span class="icon">🏗️</span>
+          <div>
+            <div class="label">CDK Terrain (CDKTN)</div>
+            <div class="sub">TypeScript → OpenTofu HCL → AWS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Provisioned with
+      <a href="https://cdktn.io" target="_blank" rel="noopener">cdktn.io</a>
+      &nbsp;·&nbsp; OpenTofu backend
+    </footer>
+  </div>
+  <script type="module" src="./ts/main.ts"></script>
+</body>
+</html>

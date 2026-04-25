@@ -1,0 +1,12 @@
+# CloudFront Logging - Intentionally disabled for cost/complexity in Getting Started
+AWS-0010
+# WAF - Intentionally disabled for cost/complexity in Getting Started
+AWS-0011
+# TLS Policy - default cloudfront.net cert only supports TLSv1 (known limitation)
+AWS-0013
+# S3 Logging - Intentionally disabled
+AWS-0089
+# S3 Versioning - Disabled for this static site demo
+AWS-0090
+# S3 Encryption - Using default SSE-S3 instead of KMS for simplicity
+AWS-0132

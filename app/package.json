@@ -1,0 +1,30 @@
+{
+  "name": "cdktn-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --import tsx --test tests/unit/**/*.test.ts",
+    "test:e2e": "playwright test",
+    "lint": "eslint src/**/*.ts",
+    "lint:design": "npx @google/design.md lint DESIGN.md"
+  },
+  "devDependencies": {
+    "@google/design.md": "latest",
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-security": "^3.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.0.0",
+    "picomatch": "^4.0.4",
+    "vite": "^8.0.10"
+  },
+  "overrides": {
+    "esbuild": "^0.25.0"
+  }
+}

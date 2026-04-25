@@ -1,0 +1,9 @@
+{
+  "language": "typescript",
+  "app": "npx ts-node main.ts",
+  "sendCrashReports": "false",
+  "projectId": "cdktn-getting-started",
+  "terraformProviders": [],
+  "terraformModules": [],
+  "context": {}
+}
